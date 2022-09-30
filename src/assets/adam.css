@@ -1,0 +1,137 @@
+body {
+	margin: 0;
+	font-family: arial;
+}
+
+/* cf recipe 1 from https://developer.mozilla.org/en-US/docs/Web/CSS/Layout_cookbook/Sticky_footers */
+#ci-app {
+    height: 100%;
+/*    display: grid;
+    grid-template-rows: auto 1fr auto;	*/
+}
+
+:after, :before {
+	box-sizing: inherit;
+} 
+
+header {
+	padding-top: 1em;
+	width: 100%;
+	height: 5em;
+	background: gray;
+	color: #DDD;
+	text-align: center;
+}
+
+header img {
+	height: 45px !important;
+}
+
+main {
+	min-height: 80vh;
+}
+
+footer {
+	width: 100%;
+	height: 2em;
+	background: #CCC;
+	text-align: center;
+}
+
+section.login {
+	margin-top: 5em;
+	margin-left: auto;
+	margin-right: auto;
+	width: 25em;
+}
+
+section.login>h2 {
+	font-weight: bold;
+	font-size: 1.2em;
+}
+
+section.login label {
+	display: inline-block;
+	font-weight: normal;
+	font-size: 1em;
+	width: 6em;
+	margin-right: 1em;
+}
+
+section.login md-button {
+	float: right;
+}
+
+section.panel {
+	border: 2px solid #AAA;
+	margin: 1em;
+}
+
+section.panel > div.heading {
+	background: #55A;
+	padding: 0.4em;
+	color: #FFF;
+	font-weight: bold;
+}
+
+section.subPanel {
+	margin-top: 1em;
+/*	border: #ddd solid 2px;
+	width:96%;
+	margin-left: auto;
+	margin-right: auto;
+	height: 100%; */
+}
+
+div.subHeading {
+	padding: 0.4em;
+	color: #FFF;
+	font-weight: bold;
+}
+
+.error {
+	font-size: 1.2em;
+	padding-top:1em;
+	color:red;	
+	padding-bottom: 1em;
+}
+
+.page-heading {
+	width: 100%;
+	height: 4em;	
+}
+
+.page-container {
+	min-height: 300px;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid rgba(#000, .12);
+}
+
+.md-toolbar {
+	padding: 0;
+}
+
+/*Demo purposes only */
+.md-drawer {
+	width: 230px;
+	max-width: calc(100vw - 125px);
+	height: 100vh;
+}
+
+.md-content {
+	padding: 16px;
+}
+
+.md-table-cell-container {
+	text-align: left;
+}
+
+.readOnly label {
+	font-weight: bold;
+		
+}
+
+.summariesTable {
+	height: 100vh;
+}
